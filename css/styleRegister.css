@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: url(../img/lima-costa-verde.jpg) no-repeat fixed center center;
+    background: url(../img/plaza-de-armas-de-lima.jpg) no-repeat fixed center center;
     background-size: cover;
 }
 .box{
@@ -17,8 +17,8 @@ body{
     box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
     border-radius: 10px;
     margin: 0;
-    
 }
+
 .box h2{
     margin: 0;
     padding: 0;
@@ -67,10 +67,11 @@ body{
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+
     display:block;
     margin-left: auto;
     margin-right: auto;
-}
+} 
 .box p{
     color: #fff;
     text-align: left;
@@ -78,4 +79,3 @@ body{
 .box a{
     color: #F1948A;
 }
-
