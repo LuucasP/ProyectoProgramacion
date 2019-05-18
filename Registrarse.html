@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/Registro.css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:transparent;">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="" width="100" height="100" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="Inicio.html">Inicio</a>
+                    <a class="nav-item nav-link" href="Tours.html">Tours</a>
+                    <a class="nav-item nav-link" href="Promociones.html">Promociones</a>
+                    <a class="nav-item nav-link active" href="Registrarse.html"  aria-disabled="true">Registrarse<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="login.html"  aria-disabled="true">Iniciar Sesión</a>
+                  </div>
+                </div>
+              </nav>
+        
+    
+    <div class="container">
+        
+    
+        
+                <form  name="formulario"  method="post" action="DatosClientes.php" >
+        
+                    <div class="row">
+                        <div class="col-4">     
+                            <div class="form-group">
+                                <label for="nombres">Nombre:</label>
+                                <input type="text" required name="nombres" id="nombres" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-4">     
+                                <div class="form-group">
+                                    <label for="nombres">Apellido Paterno:</label>
+                                    <input type="text" required name="nombres" id="apellidoP" class="form-control">
+                                </div>
+                            </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="apellidos">Apellido Materno:</label>
+                                <input type="text" required name="apellidos" id="apellidoM" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="sexo">Sexo:</label>
+                                <select name="sexo" id="sexo" class="form-control">
+                                    <option value="N">Prefiero no especificar</option>
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Femenino</option>
+                                </select>
+                            </div>
+        
+                            
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="tel">Celular:</label>
+                                <input type="text" name="tel" id="tel" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="correo">Correo:</label>
+                                <input type="email" required name="correo" id="correo" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="dire">DNI:</label>
+                                <input type="text" name="dni" id="DNI" class="form-control">
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+        
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary btn-lg">Registrarse</button>
+                            <a href="Inicio.html" class="btn btn-secondary">Cancelar</a>
+                            
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -5,6 +5,12 @@ body{
     background: url(../img/lima-costa-verde.jpg) no-repeat fixed center center;
     background-size: cover;
 }
+.nav2{
+    background-color: #363636;
+    color: #ffffff;
+    padding-top:15px;
+    padding-bottom: 15px;
+  }
 .box{
     position: relative;
     top: 50%;
