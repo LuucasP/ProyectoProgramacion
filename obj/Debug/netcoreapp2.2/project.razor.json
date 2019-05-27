@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\gpoma\\Desktop\\ProyProg\\ProyProg.csproj",
+  "FilePath": "c:\\Users\\gpoma\\Desktop\\U\\1\\ProyectoProgramacion\\ProyProg.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2779,6 +2779,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Admin\\ListarCliente.cshtml",
+      "TargetPath": "Views\\Admin\\ListarCliente.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -2799,6 +2804,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Admin\\ListarDestinos.cshtml",
+      "TargetPath": "Views\\Admin\\ListarDestinos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Admin\\Login2.cshtml",
       "TargetPath": "Views\\Admin\\Login2.cshtml",
       "FileKind": "mvc"
@@ -2816,6 +2826,11 @@
     {
       "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Admin\\RegistrarDestinos.cshtml",
+      "TargetPath": "Views\\Admin\\RegistrarDestinos.cshtml",
       "FileKind": "mvc"
     },
     {

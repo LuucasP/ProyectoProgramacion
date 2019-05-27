@@ -30,11 +30,43 @@ namespace ProyProg.Controllers
         }
 
 
-
         public IActionResult Admin(){
+            return View();
+        }
+     
+
+
+        public IActionResult ListarCliente(){
             var listaC = _context.Cliente.ToList();
 
             return View(listaC);
+        }
+
+
+        public IActionResult RegistrarDestinos(){
+
+            return View();
+        }
+
+
+
+        [HttpPost]
+        public IActionResult RegistrarDestinos(Destinos d){
+
+            if(ModelState.IsValid){
+                _context.Destinos.Add(d);
+                _context.SaveChanges();
+                return RedirectToAction("ListarDestinos");
+            }
+
+            return View(d);
+        }
+
+
+        public IActionResult ListarDestinos(){
+            var lisD = _context.Destinos.ToList();
+
+            return View("lisD");
         }
     
 

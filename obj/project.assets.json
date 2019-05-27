@@ -12155,11 +12155,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gpoma\\Desktop\\ProyProg\\ProyProg.csproj",
+      "projectUniqueName": "C:\\Users\\gpoma\\Desktop\\U\\1\\ProyectoProgramacion\\ProyProg.csproj",
       "projectName": "ProyProg",
-      "projectPath": "C:\\Users\\gpoma\\Desktop\\ProyProg\\ProyProg.csproj",
+      "projectPath": "C:\\Users\\gpoma\\Desktop\\U\\1\\ProyectoProgramacion\\ProyProg.csproj",
       "packagesPath": "C:\\Users\\gpoma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gpoma\\Desktop\\ProyProg\\obj\\",
+      "outputPath": "C:\\Users\\gpoma\\Desktop\\U\\1\\ProyectoProgramacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

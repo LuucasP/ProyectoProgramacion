@@ -1,4 +1,4 @@
-
+@model Destinos
 
 
 <!DOCTYPE html>
@@ -39,40 +39,19 @@
                     <i class="fas fa-file-signature">Inicio</i><span class="caret"></span>
                     </a>
                 </li>  
-                <li>
-                    <a class="nav-link" href="#cliente" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <li class="nav-item">
+                    <a class="nav-link" href="~/Admin/RegistrarClienteAdmin">
                         <i class="fas fa-file-signature">Cliente</i><span class="caret"></span></a>
                     </a>
-                    <ul id="cliente">
-                      <li><a href="~/Admin/ListarCliente">Listado de Clientes</a></li>
-                      <li><a href="~/Admin/RegistrarClienteAdmin">Registro de Clientes</a></li>
-                      <li><a href="">Actualizar Cliente</a></li>
-                      <li><a href="">Borrar Cliente</a></li>
-                    </ul>  
-
-                </li>
-
-                    <li class="nav-item">
-                  <a  href="~/Admin/ListarCliente" class="nav-link" href="#">
-                      <i class="fas fa-file-signature">Listar Cliente</i><span class="caret"></span></a>
-                  </a>
-                </li>
-
-
-                <li class="nav-item">
-                  <a  href="~/Admin/RegistrarClienteAdmin" class="nav-link" href="#">
-                      <i class="fas fa-file-signature">Registrar Cliente</i><span class="caret"></span></a>
-                  </a>
-                </li>
-
-
-
+                  </li>
 
                  <li class="nav-item">
                   <a class="nav-link" href="#">
                       <i class="fas fa-file-signature">Promociones</i><span class="caret"></span></a>
                   </a>
                 </li>
+               
+
                 <li class="nav-item">
                   <a class="nav-link" href="~/Asignatura/ListarDestinos">
                       <i class="fas fa-file-signature">Listar Destinos</i><span class="caret"></span></a>
@@ -83,6 +62,8 @@
                       <i class="fas fa-file-signature">Registrar Destinos</i><span class="caret"></span></a>
                   </a>
                 </li>
+
+
                 <li class="nav-item">
                   <a class="nav-link" href="#">
                       <i class="fas fa-file-signature">Tours</i><span class="caret"></span></a>
@@ -104,72 +85,51 @@
 
              <!--Inicio de Hoja-->
 
-               <div class="row">
-                  <div class="col-sm-6">
+                     <div class="row">
+                  <div class="col">
+
+                     <div class="card">
+                      <div class="card-body">
+
+                         <h5 class="card-title">Registro de Destinos</h5>
+
+                         <form action="~/Admin/RegistrarDestinos" method="post">
+                          <div class="form-group">
+                          <label>Foto</label>
+                            <input type="text" asp-for="Foto" class="form-control">
+                        </div>
+
+                         <div class="form-group">
+                            <label>Titulo</label>
+                              <input type="text" asp-for="Titulo" class="form-control">
+                          </div>
+
+                           <div class="form-group">
+                              <label>Descripción</label>
+                                <input type="text" asp-for="Descripcion" class="form-control">
+                            </div>
+
+                             <div class="form-group">
+                                <label>Precio</label>
+                                  <input type="text" asp-for="Precio" class="form-control">
+                              </div>
+
+                                    <button class="btn btn-primary">Enviar</button>
+                        </form>
+
+
+                       </div>
+                    </div>
+                  </div>
+
+
+                 </div>
 
                   
 
-                   <div class="col-sm-6">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Lista de Promociones</h5>
-                        <div class="scrollmenu">
-                        <table class="table">
-                            <tr>
-                              <th>Id</th>
-                              <th>Foto</th>
-                              <th>Nombre</th>
-                              <th>Descripción</th>
-                              <th>Precio</th>
-                            </tr>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+           
 
-                 <!--2da fila-->
-                <div class="separador">
-                <div class="row">
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Lista de Destinos</h5>
-                          <div class="scrollmenu">
-                          <table class="table">
-                              <tr>
-                                <th>Id</th>
-                                <th>Foto</th>
-                                <th>Nombre</th>
-                                <th>Descripción</th>
-                                <th>Precio</th>
-                              </tr>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Lista de Tours</h5>
-                          <div class="scrollmenu">
-                          <table class="table">
-                              <tr>
-                                <th>Id</th>
-                                <th>Foto</th>
-                                <th>Nombre</th>
-                                <th>Descripción</th>
-                                <th>Precio</th>
-                              </tr>
-                            </table>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+           
 
              <!--Fin de Hoja-->
 
