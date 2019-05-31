@@ -1,0 +1,139 @@
+.nav2{
+    background-color: #363636;
+    color: #ffffff;
+    padding-top:10px;
+    padding-bottom: 10px;
+  }
+  
+  .conte{
+      padding-top:30px;
+      background-color: #CDCDCD;
+  }
+  
+  footer{
+      background-color:  #363636;
+      color: #969696;
+      padding-bottom: 30px;
+      padding-top:30px;
+      
+  }
+  
+  footer h3{
+      color: #ffffff;
+  }
+  
+  footer  li{
+      list-style: none;
+      margin-left:5px;
+      
+  }
+  
+  footer img{
+      margin-top:15px;
+  }
+  
+  .carta{
+      background-color: #ffffff;
+  }
+  
+  .segf{
+      margin-top:30px;
+  }
+  
+  .carta h3{
+      padding-top:15px;
+      padding-bottom: 15px;
+  }
+  
+  .carta2{
+      background-color: #ffffff;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+  
+  .carta2 h3{
+      padding-top:15px;
+      padding-bottom: 15px;
+  }
+
+.conte1 {
+    background: #444;
+    padding-top: 0.4%;
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+fieldset{
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 0 0 0 40px; 
+}
+input, button{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+}
+input{
+    color: #292929;
+    border: none;
+    z-index: 2;
+}
+button{
+    font-size: 1.4em;
+    width: 50px;
+    border: none;
+    background: #333;
+    transform:  translate(-50px,0);
+    transition-duration: .3s;
+}
+.fa-search{
+    color: #bbb;
+    transform: translate(-190px,0);
+    transition: all .1s ease-in-out;
+}
+input:focus{
+    outline:  none;
+}
+input:focus + button{
+    transform:  translate(0,0);
+    transition-duration: .3s;
+}
+input:focus + button .fa{
+    color: #fff;
+    transform:  translate(0,0);
+    transition-duration: .4s;
+}
+
+.conte2{
+    padding-top:30px;    
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.centrado{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.conte3{
+    width: 100%;
+    padding-top:30px;
+    background-color: #CDCDCD;
+}
+
+img{
+    border: none;
+}
+
+
+
+
+

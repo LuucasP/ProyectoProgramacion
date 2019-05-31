@@ -1,0 +1,59 @@
+.nav2{
+    background-color: #363636;
+    color: #ffffff;
+    padding-top:10px;
+    padding-bottom: 10px;
+  }
+  
+  .conte{
+      padding-top:30px;
+      background-color:#B92037;
+  }
+  
+  footer{
+      background-color:  #363636;
+      color: #969696;
+      padding-bottom: 30px;
+      padding-top:30px;
+      
+  }
+  
+  footer h3{
+      color: #ffffff;
+  }
+  
+  footer  li{
+      list-style: none;
+      margin-left:5px;
+      
+  }
+  
+  footer img{
+      margin-top:15px;
+  }
+  
+  .carta{
+      background-color: #ffffff;
+  }
+  
+  .segf{
+      margin-top:30px;
+  }
+  
+  .carta h3{
+      padding-top:15px;
+      padding-bottom: 15px;
+  }
+  
+  .carta2{
+      background-color: #ffffff;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+  
+  .carta2 h3{
+      padding-top:15px;
+      padding-bottom: 15px;
+  }
+  
+  
