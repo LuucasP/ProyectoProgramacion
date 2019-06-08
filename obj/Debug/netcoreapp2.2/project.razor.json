@@ -2847,6 +2847,11 @@
       "FilePath": "Views\\Admin\\RegistrarDestinos.cshtml",
       "TargetPath": "Views\\Admin\\RegistrarDestinos.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Promociones.cshtml",
+      "TargetPath": "Views\\Home\\Promociones.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

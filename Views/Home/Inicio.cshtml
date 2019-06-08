@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,51 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Inicio</title>
-    <link rel="stylesheet" href="../css/Principal.css">
+    <link rel="stylesheet" href="css/Principal2.css">
 </head>
 <body>
    
     <!--Inicio-->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
-        <a class="navbar-brand" href="#">
-            <img src="../img/logo.png" alt="" width="100" height="100" class="d-inline-block align-top" alt="">
+    <nav class="navbar navbar-expand navbar-light" style="background-color: #ffffff;">
+        <a class="navbar-nav" href="#">
+            <img src="../img/Perú_sobre_Ruedas1.png" alt="" width="145" height="75" class="d-inline-block align-top" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">Inicio<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Tours</a>
-            <a class="nav-item nav-link" href="#">Promociones</a>
-            @if(Context.User.Identity.IsAuthenticated){
-              <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  <img src="../img/iconuser.png" width="40px" style="margin-right:10px;">  @Context.User.Identity.Name
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Admin</a>
-      <a class="dropdown-item" asp-controller="Cuenta" asp-action="Logout">Cerrar Sesión</a>
-  </div>
-</div>
-      
+       
+          <div class="collapse navbar-collapse">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link active" href="Inicio.html">Inicio<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="Promociones.html">Promociones</a>
 
-             
-            }else{
-              <a class="nav-item nav-link" asp-controller="Cuenta" asp-action="Registrar">Registrarse</a>
-            <a class="nav-item nav-link" asp-controller="Cuenta" asp-action="Login">Iniciar Sesión</a>
-            }
+              @if(Context.User.Identity.IsAuthenticated){
+  
+                      <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="../img/iconuser.png" width="40px" style="margin-right:10px;">  @Context.User.Identity.Name
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Admin</a>
+        <a class="dropdown-item" asp-controller="Cuenta" asp-action="Logout">Cerrar Sesión</a>
+    </div>
+  </div>
+  
+               
+              }else{
+                <a class="nav-item nav-link" asp-controller="Cuenta" asp-action="Registrar">Registrarse</a>
+              <a class="nav-item nav-link" asp-controller="Cuenta" asp-action="Login">Iniciar Sesión</a>
+              }
             
-             <a class="nav-item nav-link" asp-controller="Admin" asp-action="Admin" aria-disabled="true">Admin Prueba</a>
+           
           </div>
         </div>
       </nav>
 
      
-        <div class="nav2">
-            <center>¡Disfruta de una nueva experiencia!</center>
-        </div>
+    <div class="nav2">
+            <center>¡No te pierdas la oportunidad de vivir una experiencia comletamnete diferente!</center>
     </div>
       
     <!--Fin Inicio-->
@@ -67,39 +61,52 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="../img/slide5.jpg" class="d-block w-100"  height="550px" alt="...">
+              <img src="../img/lima-costa-verde.jpg" class="d-block w-100"  height="550px" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h5>Vive una experiencia nueva</h5>
+                <p>Has imagino una vez combinar dos de los mejores placeres de la vida</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="../img/slide4.jpg" class="d-block w-100" height="550px" alt="...">
+              <img src="../img/platos4.jpg" class="d-block w-100" height="550px" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h5>Disfrutar de una gran variedad de platos del Perú</h5>
+                <p>Mientras disfrutas de una maravillosa vista</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="../img/slide1.jpg" class="d-block w-100" height="550px" alt="...">
+              <img src="../img/plaza-de-armas-de-lima.jpg" class="d-block w-100" height="550px" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h5>Disfrutar de maravillosas vistas del Perú</h5>
+                <p>Mientras disfruta de la deliciosa grastronomia que te podemos ofrecer</p>
               </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only">Anterio</span>
           </a>
           <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only">Siguiente</span>
           </a>
         </div>
       </div>
-  
+
     <!--Fin Carousel-->
+    
+    <div class="conte1">
+        <!--
+        <form>
+          <fieldset>
+            <input type="search" placeholder="Buscar tour">
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+          </fieldset>
+          </form>
+        -->
+    </div>
 
     <!--Inicio del contenedor-->
     <div class="conte">
@@ -108,83 +115,128 @@
         <!--Inicio de Cards-->
         <div class="card-group">
           <div class="card">
-          
-              <img src="../img/1.jpg" class="card-img-top" alt="...">
-           
-              </div>
-              
-          <div class="card">
-            <img src="../img/2.jpeg" class="card-img-top" alt="...">
+            <img src="../img/lima-costa-verde.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title">Ruta Costa Verde</h5>
+              <p class="card-text">Siendo que el litoral sur limeño desde la Provincia Constitucional del Callao hasta el distrito de Chorrillos se caracteriza por contar con un elevado acantilado, la Costa Verde se caracteriza por ser la única vía que se encuentra debajo del barranco y adyacente a la orilla del Océano Pacífico.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
           <div class="card">
-            <img src="../img/3.jpeg" class="card-img-top" alt="...">
+            <img src="../img/Pachacamac-Lima.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <h5 class="card-title">Ruta Pachacamac</h5>
+              <p class="card-text">Pachacamac es el complejo arqueológico más grande e importante de Lima. Ocupa un área de 465.32 hectáreas, con un perímetro de 12 925.41 metros lineales, y es administrado por el Ministerio de Cultura. Cuenta con un museo y gabinetes para el análisis, registro y almacenaje del material.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../img/plaza_san_martin1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ruta Plaza de San Martín</h5>
+              <p class="card-text">La Plaza San Martín es una plaza ubicada en la cuadra 9 de la avenida Colmena dentro del centro histórico de Lima en la ciudad de Lima. En 1988 fue declarada Patrimonio de la Humanidad por la UNESCO ya que está considerada como uno de los espacios públicos más representativos de la ciudad de Lima, Perú.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
         </div>
 
+        <br>
+        <h3>Destinos por Provincia:</h3>
 
         <!--2da fila-->
         <div class="segf">
         <div class="card-group">
           <div class="card">
-            <img src="../img/1.jpg" class="card-img-top" alt="...">
+            <img src="../img/reserva_de_paracas7.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">Reserva Nacional de Paracas (Paracas)</h5>
+              <p class="card-text">Paracas se ubica en el departamento de Ica y la provincia de Pisco en Perú. Por su cercanía al mar, Paracas es un balneario en forma de bahía. ... Paracas, abarca una superficie de 335,000 hectáreas, de las cuales 117,406 son de tierra firme y 217,594 de aguas marinas.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
           <div class="card">
-            <img src="../img/2.jpeg" class="card-img-top" alt="...">
+            <img src="../img/plaza_de_arequipa7.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title">Plaza de Arequipa (Arequipa)</h5>
+              <p class="card-text">Arequipa, la Ciudad Blanca. Arequipa está situado a una altura de 2325 m en las montañas del desierto de los Andes. Esta ciudad hermosa esta construido casi totalmente en sillar, una clase de piedra volcánica blanca. ... Con su un millón habitantes, Arequipa es la segunda ciudad más grande del Perú.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
           <div class="card">
-            <img src="../img/3.jpeg" class="card-img-top" alt="...">
+            <img src="../img/plaza_de_chiclayo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <h5 class="card-title"> Plaza de Chiclayo (Chiclayo)</h5>
+              <p class="card-text">Chiclayo es una ciudad del noroeste peruano, capital de la provincia homónima y del departamento de Lambayeque. ... La ciudad fue fundada cerca de un importante sitio arqueológico antiguo, las ruinas del norte de Wari, que constituyen los restos de una ciudad desde el 7 al 12 de siglo Imperio Wari.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
         </div>
       </div>
-        <!--Fin 2da fila-->
-      </div>
+      <br>
+    </div>
+              <!--Fin 2da fila-->
     
         <!--Fin de Cards-->
-      
-        <div class="container">
-           
-          <div class="row">
-            
-            <div class="col carta2">
-                <h3>Encuentranos</h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5768431457545!2d-76.94442838518715!3d-12.07260939145012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6e79c730057%3A0x244c0d1a7cddcfbd!2sUSMP!5e0!3m2!1ses-419!2spe!4v1556946396615!5m2!1ses-419!2spe" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+        <div class="conte3">
+            <div class="container carta">
+                        <br>
+                        <center><h3> NUESTRA PROMESA </h3> </center>
+                        <br>
+              <center>
+                <img src="../img/precio.PNG"/>
+                <img src="../img/separar.PNG" align="rigth"/>
+                <img src="../img/compra.PNG" align="rigth" />
+                <img src="../img/separar.PNG" align="rigth"/>
+                <img src="../img/costo.PNG" align="rigth" />
+                <img src="../img/separar.PNG" align="rigth"/>
+                <img src="../img/seguro.PNG" align="rigth" />
+              </center>
+              <br>
+              <br>
             </div>
-          </div>
-        </div>
-      </div>
+        </div>   
+
+    <div class="conte2">
+                    <img src="../img/plaza.jpg" height="400"  class="w-100" /> 
+                    <div class="centrado">VIVE NUEVAS EXPERIENCIAS <br> 
+                      Perú sobre Ruedas es la mayor plataforma a nivel mundial para comprarpasajes de bus por internet. 
+                      Millones de usuarios alrededor del mundo, felices y satisfechos con el servicio, nos avalan. 
+                      Perú sobre Ruedas agrupa un gran n&#xFA;mero de empresas de bus confiables en Per&#xFA;, 
+                      ofreciendo una experiencia de compra r&#xE1;pida, pr&#xE1;ctica y segura. 
+                      El sistema te permite elegir el destino, seleccionar la asientos y comprar tus pasajes con pocos clics. Aprovecha nuestras ofertas y planifica &#xA1;el mejor de los viajes!</div>
+    </div>
+  
+
     <!--Fin del contenedor-->
+      
+    <div class="conte">
+        <div class="container carta">
+                    <br>
+                    <center><h3> OPCIONES DE PAGO </h3></strong> </center>
+                    <br>
+          <center>
+            <img style="margin: 40px" src="../img/VISA.png"/>
+            <img style="margin: 40px" src="../img/AMERICANEXPRESS.png" align="rigth" />
+            <img style="margin: 40px" src="../img/MASTERCARD.png" align="rigth" />
+            <img style="margin: 40px" src="../img/PAYPAL.png" align="rigth" />
+            <img style="margin: 40px" src="../img/DINERSCLUB.png" align="rigth" />
+            <br>
+          </center>
+          <br>
+        </div>
+    </div>   
 
     <!--Footer-->
+    <br>
+    <p>
+      
+    </p>
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-6 ">
-                    <img src="../img/logo.png" width="100" height="100" alt="">
+                    <img src="../img/logo.png" width="120" height="120" alt="">
                 </div>
 
                 <div class="col-6">
@@ -192,8 +244,7 @@
                     
                         <li>+51 000 111 222</li>
                         <li>(01) 1112223</li>
-                        <li>perusobreruedas@mail.com</li>
-                   
+                        <li>perusobreruedas@gmail.com</li>
                 </div>
             </div>
         </div>
@@ -201,10 +252,7 @@
     <!--Fin del Footer-->
 
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
-
 </body>
 </html>

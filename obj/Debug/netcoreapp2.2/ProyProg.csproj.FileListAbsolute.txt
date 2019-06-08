@@ -190,3 +190,4 @@ C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\ProyProg.dll
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\ProyProg.pdb
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\ProyProg.csproj.CopyComplete
+C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\Razor\Views\Home\Promociones.g.cshtml.cs
