@@ -1,3 +1,5 @@
+@model ProyProg.Models.Cliente
+
 <!DOCTYPE html>	
 <html lang="en">	
 <head>	
@@ -18,20 +20,26 @@
         </ul>	
         <h2>Registrarse</h2>	
         <form>	
-            <div class="inputBox">	
-                <input type="text" name="" required="">	
+            <div class="inputBox" asp-action="registrar" method="post">
+                <div asp-asp-validation-summary="All"></div>	
+                <input type="text" >	
                 <label>Nombres</label>	
             </div>	
             <div class="inputBox">	
-                <input type="text" name="" required="">	
+                <input type="text" >	
                 <label>Apellidos</label>	
-            </div>	
+            </div>
+
+                     <div class="inputBox">	
+                <input type="text" asp-for="Usuario" required>	
+                <label>Nombre de Usuario</label>	
+            </div>    
             <div class="inputBox">	
-                <input type="text" name="" required="">	
+                <input type="text" asp-for="Email" required>	
                 <label>Correo Electrónico</label>	
             </div>	
             <div class="inputBox">	
-                <input type="password" name="" required="">	
+                <input type="password" asp-for="Password" required>	
                 <label>Contaseña</label>	
             </div>	
             <input type="submit" name="" value="Registrar">	

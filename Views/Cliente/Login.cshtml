@@ -1,3 +1,5 @@
+@model ProyectoProgramacion.Models.LoginCliente
+
 <!DOCTYPE html>	
 <html lang="en">	
 <head>	
@@ -13,19 +15,19 @@
 <body>	
     <div class="box">	
         <h2>Iniciar Sesión</h2>	
-        <form>	
+        <form action="login" method="post">	
             <div class="inputBox">	
-                <input type="text" name="" required="">	
+                <input type="text" asp-for="Usuario" required>	
                 <label>Usuario</label>	
             </div>	
             <div class="inputBox">	
-                <input type="password" name="" required="">	
-                <label>Contaseña</label>	
+                <input type="password" asp-for="Password" required="">	
+                <label>Contraseña</label>	
             </div>	
-            <input type="submit" name="" value="Ingresar">	
+            <button class="btn btn-primary">Iniciar Sesión</button> 	
             <p></p>	
             <div>	
-            <p>¿No tienes una cuenta? <a href="Register.html">Regístrate</a></p>	
+            <p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>	
             </div>	
         </form>	
     </div>	

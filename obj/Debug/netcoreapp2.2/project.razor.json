@@ -2764,6 +2764,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Home\\Inicio.cshtml",
+      "TargetPath": "Views\\Home\\Inicio.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -2776,11 +2781,6 @@
     {
       "FilePath": "Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\Admin\\Inicio.cshtml",
-      "TargetPath": "Views\\Admin\\Inicio.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2814,11 +2814,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Admin\\Login2.cshtml",
-      "TargetPath": "Views\\Admin\\Login2.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "Views\\Admin\\RegistrarClienteAdmin.cshtml",
       "TargetPath": "Views\\Admin\\RegistrarClienteAdmin.cshtml",
       "FileKind": "mvc"
@@ -2829,8 +2824,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Cliente\\Login.cshtml",
+      "TargetPath": "Views\\Cliente\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Cliente\\DashboardCliente.cshtml",
       "TargetPath": "Views\\Cliente\\DashboardCliente.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Cliente\\Registrar.cshtml",
+      "TargetPath": "Views\\Cliente\\Registrar.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2841,11 +2846,6 @@
     {
       "FilePath": "Views\\Admin\\RegistrarDestinos.cshtml",
       "TargetPath": "Views\\Admin\\RegistrarDestinos.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\Admin\\Register.cshtml",
-      "TargetPath": "Views\\Admin\\Register.cshtml",
       "FileKind": "mvc"
     }
   ]

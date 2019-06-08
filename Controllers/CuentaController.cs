@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using ProyectoProgramacion.Models;
 using ProyProg.Models;
 
 namespace ProyectoProgramacion.Controllers
@@ -36,7 +37,7 @@ namespace ProyectoProgramacion.Controllers
                 var resultado = _userManager.CreateAsync(user,model.Password);
                 
                 if(resultado.Result == IdentityResult.Success){
-                    return RedirectToAction("DashboardCliente", "Cliente");
+                    return RedirectToAction("Inicio", "Home");
                 }else{
                     foreach(var error in resultado.Result.Errors){
                         ModelState.AddModelError("error", error.Description);
@@ -46,7 +47,34 @@ namespace ProyectoProgramacion.Controllers
             return View(model);
         }
 
+        public IActionResult Login(){
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Login(LoginCliente model){
+            if(ModelState.IsValid){
+                var resultado = _signInManager.PasswordSignInAsync(model.Usuario,model.Password,false,false);
+            
+            if(resultado.Result.Succeeded){
+                return RedirectToAction("Inicio", "Home");
+            }else{
+                ModelState.AddModelError("error","Usuario o contraseña incorrecta");
+            }
+            
+            }
+            return View(model);
+        }
+
+        public IActionResult Logout(){
+            _signInManager.SignOutAsync();
+            return RedirectToAction("Inicio", "Home");
+        
+        }
     }
 
 
-}
+   
+    }
+

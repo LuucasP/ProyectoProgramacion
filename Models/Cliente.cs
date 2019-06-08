@@ -5,13 +5,13 @@ namespace ProyProg.Models{
 
     public class Cliente{
 
-        [Required]
+        
         public string Nombre {get;set;}
 
-        [Required]
+      
         public string Apellido{get;set;}
 
-        [Required]
+       
         public string Fecnac{get;set;}
 
         [Required]
