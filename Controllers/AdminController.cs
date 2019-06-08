@@ -129,5 +129,132 @@ namespace ProyProg.Controllers
             return RedirectToAction("ListarDestinos");
         }
 
+        // Promociones
+        public IActionResult ListarPromociones(){
+            var promociones = _context.Promociones.ToList();
+            return View();
+        }
+
+
+        public IActionResult RegistrarPromociones(){
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult RegistrarPromociones(Promociones p){
+            if(ModelState.IsValid){
+                _context.Promociones.Add(p);
+                _context.SaveChanges();
+
+                return RedirectToAction("ListarPromociones");
+            }
+            return View(p);
+        }
+
+
+        public IActionResult ActualizarPromociones(int id){
+            var p = _context.Promociones.FirstOrDefault(x => x.Id == id);
+            if(p == null){
+                return NotFound();
+            }
+            return View(p);
+        }
+
+        [HttpPost]
+        public IActionResult ActualizarPromociones(Promociones p){
+            if (ModelState.IsValid) {
+                var promocionBd = _context.Promociones.Find(p.Id);
+
+                promocionBd.Foto = p.Foto;
+                promocionBd.Titulo = p.Titulo;
+                promocionBd.Descripcion = p.Descripcion;
+                promocionBd.Precio = p.Precio;
+             
+
+                _context.SaveChanges();
+
+                return RedirectToAction("ListarPromociones");
+            }
+
+            return View(p);
+            }
+
+
+             public IActionResult BorrarPromociones(int id)
+        {
+            var p = _context.Promociones.FirstOrDefault(x => x.Id == id);
+
+            if (p != null) {
+                _context.Promociones.Remove(p);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("ListarPromociones");
+        }
+
+
+            //Tours
+
+          public IActionResult ListarTours(){
+            var promociones = _context.Tours.ToList();
+            return View();
+        }
+
+         public IActionResult RegistrarTours(){
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult RegistrarTours(Tours p){
+            if(ModelState.IsValid){
+                _context.Tours.Add(p);
+                _context.SaveChanges();
+
+                return RedirectToAction("ListarTours");
+            }
+            return View(p);
+        }
+
+        public IActionResult ActualizarTours(int id){
+            var p = _context.Tours.FirstOrDefault(x => x.Id == id);
+            if(p == null){
+                return NotFound();
+            }
+            return View(p);
+        }
+
+        [HttpPost]
+        public IActionResult ActualizarTours(Tours p){
+            if (ModelState.IsValid) {
+                var toursBd = _context.Tours.Find(p.Id);
+
+                toursBd.Foto = p.Foto;
+                toursBd.Titulo = p.Titulo;
+                toursBd.Descripcion = p.Descripcion;
+                toursBd.Precio = p.Precio;
+             
+
+                _context.SaveChanges();
+
+                return RedirectToAction("ListarTours");
+            }
+
+            return View(p);
+            }
+
+
+
+               public IActionResult BorrarTours(int id)
+        {
+            var p = _context.Tours.FirstOrDefault(x => x.Id == id);
+
+            if (p != null) {
+                _context.Tours.Remove(p);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("ListarTours");
+        }
+
     }
 }
