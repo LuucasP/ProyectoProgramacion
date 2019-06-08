@@ -18,10 +18,9 @@ namespace ProyProg.Controllers
             _context = context;
         }
     
-          public IActionResult ListarDestinos(){
-            var listaD = _context.Destinos.ToList();
-
-            return View("listaD");
+         public IActionResult ListarDestinos(){
+            var destino = _context.Destinos.ToList();
+            return View(destino);
         }
 
 
@@ -132,7 +131,7 @@ namespace ProyProg.Controllers
         // Promociones
         public IActionResult ListarPromociones(){
             var promociones = _context.Promociones.ToList();
-            return View();
+            return View(promociones);
         }
 
 
@@ -196,8 +195,8 @@ namespace ProyProg.Controllers
             //Tours
 
           public IActionResult ListarTours(){
-            var promociones = _context.Tours.ToList();
-            return View();
+            var tour = _context.Tours.ToList();
+            return View(tour);
         }
 
          public IActionResult RegistrarTours(){

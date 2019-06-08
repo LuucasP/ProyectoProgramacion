@@ -1,3 +1,4 @@
+@model ProyProg.Models.Tours
 
 <!DOCTYPE html>
 <html>
@@ -29,14 +30,14 @@
                 <img src="../img/user.jpg">
             </div>  
                 <p>Bienvenido @Context.User.Identity.Name</p>
-                <li class="active" >
+                <li>
                     <a href="#">Inicio</a>
                     
                 </li>
                    <li>
                     <a href="#Destinos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Destinos</a>
                     <ul class="collapse list-unstyled" id="Destinos">
-                        <li>
+                      <li>
                             <a asp-controller="Admin" asp-action="RegistrarDestinos">Registrar Destino</a>
                         </li>
                         <li>
@@ -65,7 +66,7 @@
                 <li>
                     <a href="#Tours" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tours</a>
                     <ul class="collapse list-unstyled" id="Tours">
-                        <li>
+                   <li>
                             <a asp-controller="Admin" asp-action="RegistrarTours">Registrar Tour</a>
                         </li>
                         <li>
@@ -81,7 +82,7 @@
                 <li>
                     <a href="#Promociones" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Promociones</a>
                     <ul class="collapse list-unstyled" id="Promociones">
-                        <li>
+                      <li>
                             <a asp-controller="Admin" asp-action="RegistrarPromociones">Registrar Promoción</a>
                         </li>
                         <li>
@@ -131,36 +132,37 @@
             </nav>
         
 
-        <h3>Bienvenido a Perú sobre ruedas</h3>
+        <h3>Registrar Tours</h3>
 
-        En este dashboard podrás modificar tanto las reservas  como las promociones y los tours además de actualizarlas y agregar otras.<br>
-        
-        Tenemoes 3 secciones que encontrarás en el sidebar de la parte izquiera estas son:
-        <br>
-        <br>
-        <ul>
-            <li>Destinos:</li>
-            <ul>
-            <li>Registrar Destino</li>
-            <li>Actualizar Destino</li>
-            <li>Ver Destinos</li>
-            </ul>
+    <form action="~/admin/registrartours" method="post">
 
-            <li>Tour:</li>
-            <ul>
-            <li>Registrar Destino</li>
-            <li>Actualizar Destino</li>
-            <li>Ver Destinos</li>
-            </ul>
+<div class="form-group">
+    <label>Foto:</label>
+    <input type="text" class="form-control" asp-for="Foto" >
+   
+</div>
 
-            <li>Promociones:</li>
-            <ul>
-            <li>Registrar Destino</li>
-            <li>Actualizar Destino</li>
-            <li>Ver Destinos</li>
-            </ul>
+<div class="form-group">
+    <label>Titulo:</label>
+    <input type="text" class="form-control" asp-for="Titulo" >
+     @Html.ValidationMessageFor(m => m.Titulo, "", new { @class = "text-danger" })
+</div>
 
-        </ul>
+<div class="form-group">
+    <label>Descripcion:</label>
+    <input type="text" class="form-control" asp-for="Descripcion" >
+    @Html.ValidationMessageFor(m => m.Descripcion, "", new { @class = "text-danger" })
+</div>
+
+<div class="form-group">
+    <label>Precio:</label>
+    <input type="text" class="form-control" asp-for="Precio" >
+    @Html.ValidationMessageFor(m => m.Precio, "", new { @class = "text-danger" })
+</div>
+
+<button class="btn btn-primary">Enviar</button>
+
+</form>
             
         </div>
     </div>

@@ -2769,8 +2769,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Admin\\ActualizarPromociones.cshtml",
+      "TargetPath": "Views\\Admin\\ActualizarPromociones.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Admin\\RegistrarTours.cshtml",
+      "TargetPath": "Views\\Admin\\RegistrarTours.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2814,8 +2824,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Admin\\RegistrarPromociones.cshtml",
+      "TargetPath": "Views\\Admin\\RegistrarPromociones.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Admin\\ActualizarTours.cshtml",
+      "TargetPath": "Views\\Admin\\ActualizarTours.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2839,6 +2859,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Admin\\ListarPromociones.cshtml",
+      "TargetPath": "Views\\Admin\\ListarPromociones.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -2846,6 +2871,11 @@
     {
       "FilePath": "Views\\Admin\\RegistrarDestinos.cshtml",
       "TargetPath": "Views\\Admin\\RegistrarDestinos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Admin\\ListarTours.cshtml",
+      "TargetPath": "Views\\Admin\\ListarTours.cshtml",
       "FileKind": "mvc"
     },
     {
