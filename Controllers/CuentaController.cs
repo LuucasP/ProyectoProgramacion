@@ -38,7 +38,7 @@ namespace ProyectoProgramacion.Controllers
                 var resultado = _userManager.CreateAsync(user,model.Password);
                 
                 if(resultado.Result == IdentityResult.Success){
-                    return RedirectToAction("inicio", "home");
+                    return RedirectToAction("Inicio","Home");
                 }else{
                     foreach(var error in resultado.Result.Errors){
                         ModelState.AddModelError("error", error.Description);
