@@ -12150,23 +12150,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\equipo\\.nuget\\packages\\": {},
+    "C:\\Users\\PC\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\equipo\\Desktop\\CommitsLucas\\ProyectoProgramacion\\ProyProg.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\FinalProg\\ProyectoProgramacion\\ProyProg.csproj",
       "projectName": "ProyProg",
-      "projectPath": "C:\\Users\\equipo\\Desktop\\CommitsLucas\\ProyectoProgramacion\\ProyProg.csproj",
-      "packagesPath": "C:\\Users\\equipo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\equipo\\Desktop\\CommitsLucas\\ProyectoProgramacion\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Desktop\\FinalProg\\ProyectoProgramacion\\ProyProg.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\FinalProg\\ProyectoProgramacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\equipo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

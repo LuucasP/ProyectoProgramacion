@@ -62,18 +62,17 @@
 }
 
 .conte2{
-    padding-top:30px;    
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    
+  background-image: url('../img/plaza.jpg');
+  width: 100%;
+  height: 450px;
+  padding-top: 150px;  
+  font-size: 18px;
+  padding-right: 50px;
+    padding-left:50px;
 }
 .centrado{
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    text-align: justify;
 }
 
 .conte3{
