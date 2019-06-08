@@ -12156,11 +12156,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\equipo\\Desktop\\dashgit\\ProyectoProgramacion\\ProyProg.csproj",
+      "projectUniqueName": "C:\\Users\\equipo\\Desktop\\CommitsJorge\\ProyectoProgramacion\\ProyProg.csproj",
       "projectName": "ProyProg",
-      "projectPath": "C:\\Users\\equipo\\Desktop\\dashgit\\ProyectoProgramacion\\ProyProg.csproj",
+      "projectPath": "C:\\Users\\equipo\\Desktop\\CommitsJorge\\ProyectoProgramacion\\ProyProg.csproj",
       "packagesPath": "C:\\Users\\equipo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\equipo\\Desktop\\dashgit\\ProyectoProgramacion\\obj\\",
+      "outputPath": "C:\\Users\\equipo\\Desktop\\CommitsJorge\\ProyectoProgramacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

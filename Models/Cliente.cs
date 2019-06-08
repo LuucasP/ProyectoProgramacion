@@ -5,27 +5,31 @@ namespace ProyProg.Models{
 
     public class Cliente{
 
-        public int Id{get;set;}
-
-
-        public string Foto{get;set;}
         [Required]
-        public string Nombre{get;set;}
-        [Required]
-        public string Apepat{get;set;}
-
+        public string Nombre {get;set;}
 
         [Required]
-        public string Apemat{get;set;}
-        [Required]
-        public string Dni{get;set;}
+        public string Apellido{get;set;}
 
-        [Required]        
+        [Required]
+        public string Fecnac{get;set;}
+
+        [Required]
+        [DataType(DataType.EmailAddress)]
         public string Email{get;set;}
+
         [Required]
-        public string Pass{get;set;}
+        public string Usuario{get;set;}
+
+        [Required]
+        [DataType(DataType.Password)]
+        public string Password{get;set;}
 
 
+        [Required]
+        [DataType(DataType.Password)]
+        [Compare("Password", ErrorMessage = "Las contraseñas deben de ser iguales")]
+        public string PasswordConfirmacion {get;set;}
 
     }
 }

@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProyProg.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace ProyProg
 {
@@ -33,6 +34,7 @@ namespace ProyProg
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<ProyectoContext>();
             services.AddDbContext<ProyectoContext>(options =>options.UseMySql(Configuration.GetConnectionString("Default")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -54,6 +56,7 @@ namespace ProyProg
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {
