@@ -62,7 +62,7 @@ namespace ProyProg
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Admin}/{action=Inicio}/{id?}");
+                    template: "{controller=Home}/{action=Inicio}/{id?}");
             });
         }
     }

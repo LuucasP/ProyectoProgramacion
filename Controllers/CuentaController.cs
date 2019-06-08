@@ -27,6 +27,7 @@ namespace ProyectoProgramacion.Controllers
             return View();
         }
 
+        [HttpPost]        
         public IActionResult Registrar(Cliente model){
             if(ModelState.IsValid){
                 var user = new IdentityUser();
@@ -37,7 +38,7 @@ namespace ProyectoProgramacion.Controllers
                 var resultado = _userManager.CreateAsync(user,model.Password);
                 
                 if(resultado.Result == IdentityResult.Success){
-                    return RedirectToAction("Inicio", "Home");
+                    return RedirectToAction("inicio", "home");
                 }else{
                     foreach(var error in resultado.Result.Errors){
                         ModelState.AddModelError("error", error.Description);

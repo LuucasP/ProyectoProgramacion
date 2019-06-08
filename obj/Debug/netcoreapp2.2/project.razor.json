@@ -2774,6 +2774,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Cuenta\\Login.cshtml",
+      "TargetPath": "Views\\Cuenta\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Admin\\DashAdmin.cshtml",
       "TargetPath": "Views\\Admin\\DashAdmin.cshtml",
       "FileKind": "mvc"
@@ -2796,6 +2801,11 @@
     {
       "FilePath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Cuenta\\Registrar.cshtml",
+      "TargetPath": "Views\\Cuenta\\Registrar.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2824,18 +2834,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Cliente\\Login.cshtml",
-      "TargetPath": "Views\\Cliente\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "Views\\Cliente\\DashboardCliente.cshtml",
       "TargetPath": "Views\\Cliente\\DashboardCliente.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\Cliente\\Registrar.cshtml",
-      "TargetPath": "Views\\Cliente\\Registrar.cshtml",
       "FileKind": "mvc"
     },
     {

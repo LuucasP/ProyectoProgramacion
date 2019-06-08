@@ -19,8 +19,8 @@
             <li class="img2"></li>	
         </ul>	
         <h2>Registrarse</h2>	
-        <form>	
-            <div class="inputBox" asp-action="registrar" method="post">
+        <form asp-action="Registrar" method="post"> 	
+            <div class="inputBox" >
                 <div asp-asp-validation-summary="All"></div>	
                 <input type="text" >	
                 <label>Nombres</label>	
@@ -41,8 +41,13 @@
             <div class="inputBox">	
                 <input type="password" asp-for="Password" required>	
                 <label>Contaseña</label>	
-            </div>	
-            <input type="submit" name="" value="Registrar">	
+            </div>
+             <div class="inputBox">	
+                <input type="password" asp-for="PasswordConfirmacion" required>	
+                <label>Contaseña</label>	
+            </div>
+            	
+            <button>Crear Cuenta </button>	
             <p></p>	
             <div>	
                 <a href="Login2.html">Volver al Inicio de Sesión</a></p>	
