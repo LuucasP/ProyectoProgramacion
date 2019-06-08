@@ -1,22 +1,28 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Base_de_Datos.Models
-{
-    public class Cliente
-    {
-        public int Id{get;set;}
-        public string Foto{get;set;}
+namespace ProyectoProgra1.Models{
+
+    public class Cliente{
+
+        public int Id {get; set;}
 
         [Required]
-        public string Nombre{get;set;}
-        public string ApellidoPat{get;set;}
-        public string ApellidoMat{get;set;}
-        public string DocumentoIden{get;set;}
+        public int Dni{get; set;}
+
+        public string Nombre {get;set;}
+
+        public string Apepat {get; set;}
+
+        public string Apemat {get;set;}
 
         [Required]
-        public string Email{get;set;}
+
+        public LoginCliente Correo {get; set;}
 
         [Required]
-        public string Pass{get;set;}
+
+        public LoginCliente Contraseña {get; set;}
+
+
     }
 }
