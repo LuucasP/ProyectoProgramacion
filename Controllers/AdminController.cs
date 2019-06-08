@@ -18,7 +18,13 @@ namespace ProyProg.Controllers
             _context = context;
         }
     
-    
+          public IActionResult ListarDestinos(){
+            var listaD = _context.Destinos.ToList();
+
+            return View("listaD");
+        }
+
+
         public IActionResult Inicio()
         {
             return View();
@@ -48,7 +54,9 @@ namespace ProyProg.Controllers
             return View();
         }
 
-
+    public IActionResult Dashboard(){
+        return View();
+    }
 
         [HttpPost]
         public IActionResult RegistrarDestinos(Destinos d){
@@ -63,11 +71,7 @@ namespace ProyProg.Controllers
         }
 
 
-        public IActionResult ListarDestinos(){
-            var lisD = _context.Destinos.ToList();
-
-            return View("lisD");
-        }
+      
     
 
         [HttpPost]
@@ -79,6 +83,50 @@ namespace ProyProg.Controllers
             }
 
             return View(c);
+        }
+
+         public IActionResult ActualizarDestino(int id)
+        {
+            var p = _context.Destinos.FirstOrDefault(x => x.Id == id);
+
+            if (p == null) {
+                return NotFound();
+            }
+
+            return View(p);
+        }
+
+
+        [HttpPost]
+        public IActionResult ActualizarDestino(Destinos d)
+        {
+            if (ModelState.IsValid) {
+                var destino = _context.Destinos.Find(d.Id);
+
+              destino.Foto = d.Foto;
+              destino.Titulo = d.Titulo;
+              destino.Descripcion = d.Descripcion;
+              destino.Precio = d.Precio;
+
+                _context.SaveChanges();
+
+                return RedirectToAction("ListarDestinos");
+            }
+
+            return View(d);
+        }
+
+
+         public IActionResult BorrarDestino(int id)
+        {
+            var p = _context.Destinos.FirstOrDefault(x => x.Id == id);
+
+            if (p != null) {
+                _context.Destinos.Remove(p);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("ListarDestinos");
         }
 
     }

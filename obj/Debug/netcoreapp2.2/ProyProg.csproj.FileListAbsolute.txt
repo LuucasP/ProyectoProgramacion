@@ -172,7 +172,6 @@ C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\Razor\Views\Admin\ListarDestinos.g.cshtml.cs
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\Razor\Views\Admin\RegistrarClienteAdmin.g.cshtml.cs
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\Razor\Views\Admin\RegistrarDestinos.g.cshtml.cs
-C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\DashboardCliente.g.cshtml.cs
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\Razor\Views\Cuenta\Login.g.cshtml.cs
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\Razor\Views\Cuenta\Registrar.g.cshtml.cs
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
@@ -191,3 +190,5 @@ C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\ProyProg.pdb
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\ProyProg.csproj.CopyComplete
 C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\Razor\Views\Home\Promociones.g.cshtml.cs
+C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Dashboard.g.cshtml.cs
+C:\Users\equipo\Desktop\CommitsLucas\ProyectoProgramacion\obj\Debug\netcoreapp2.2\Razor\Views\Admin\ActualizarDestino.g.cshtml.cs

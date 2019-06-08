@@ -1,4 +1,3 @@
-@model List<Destinos>
 
 <!DOCTYPE html>
 <html>
@@ -30,21 +29,21 @@
                 <img src="../img/user.jpg">
             </div>  
                 <p>Bienvenido @Context.User.Identity.Name</p>
-                <li>
+                <li class="active" >
                     <a href="#">Inicio</a>
                     
                 </li>
                    <li>
                     <a href="#Destinos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Destinos</a>
                     <ul class="collapse list-unstyled" id="Destinos">
-                        <li class="active" >
-                            <a href="#">Registrar Destino</a>
+                        <li>
+                            <a asp-controller="Admin" asp-action="RegistrarDestinos">Registrar Destino</a>
                         </li>
                         <li>
-                            <a href="#">Actualizar Destino</a>
+                            <a asp-controller="Admin" asp-action="ActualizarDestino">Actualizar Destino</a>
                         </li>
                         <li>
-                            <a href="#">Lista de Destino</a>
+                            <a asp-controller="Admin" asp-action="ListarDestinos">Lista de Destino</a>
                         </li>
                     </ul>
                 </li> 
@@ -132,35 +131,36 @@
             </nav>
         
 
-        <h3>Listar Destinos</h3>
-        <table class="table">
-    <tr>
-        <th>Id</th>
-        <th>Foto</th>
-        <th>Titulo</th>
-        <th>Descripcion</th>
-        <th>Precios</th>
-    </tr>
+        <h3>Bienvenido a Perú sobre ruedas</h3>
 
-    @foreach(var d in Model) {
-        <tr>
-            <td>@d.Id</td>  
-            <td><img src="@d.Foto" width="100"></td>
-            <td>@d.Titulo</td>
-            <td>@d.Descripcion</td>
-            
-            <td>
-                <a href="~/admin/actualizardestino/@d.Id">Actualizar</a> | 
-                <a href="~/admin/borrardestino/@d.Id">Borrar</a>
-            </td>
-        </tr>
-    }
-    
+        En este dashboard podrás modificar tanto las reservas  como las promociones y los tours además de actualizarlas y agregar otras.<br>
+        
+        Tenemoes 3 secciones que encontrarás en el sidebar de la parte izquiera estas son:
+        <br>
+        <br>
+        <ul>
+            <li>Destinos:</li>
+            <ul>
+            <li>Registrar Destino</li>
+            <li>Actualizar Destino</li>
+            <li>Ver Destinos</li>
+            </ul>
 
-</table>
+            <li>Tour:</li>
+            <ul>
+            <li>Registrar Destino</li>
+            <li>Actualizar Destino</li>
+            <li>Ver Destinos</li>
+            </ul>
 
+            <li>Promociones:</li>
+            <ul>
+            <li>Registrar Destino</li>
+            <li>Actualizar Destino</li>
+            <li>Ver Destinos</li>
+            </ul>
 
-   
+        </ul>
             
         </div>
     </div>

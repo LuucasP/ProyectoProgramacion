@@ -1,3 +1,4 @@
+@model ProyProg.Models.Destinos
 
 <!DOCTYPE html>
 <html>
@@ -28,15 +29,15 @@
                 <div class="imgr">
                 <img src="../img/user.jpg">
             </div>  
-                <p>Bienvenido </p>
-                <li >
-                    <a href="#">Home</a>
+                <p>Bienvenido @Context.User.Identity.Name</p>
+                <li>
+                    <a href="#">Inicio</a>
                     
                 </li>
                    <li>
                     <a href="#Destinos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Destinos</a>
                     <ul class="collapse list-unstyled" id="Destinos">
-                        <li class="active">
+                        <li class="active" >
                             <a href="#">Registrar Destino</a>
                         </li>
                         <li>
@@ -48,7 +49,7 @@
                     </ul>
                 </li> 
 
-                <li>
+                <!--<li>
                     <a href="#Clientes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Clientes</a>
                     <ul class="collapse list-unstyled" id="Clientes">
                         <li>
@@ -61,7 +62,7 @@
                             <a href="#">Lista de Clientes</a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
                 <li>
                     <a href="#Tours" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tours</a>
                     <ul class="collapse list-unstyled" id="Tours">
@@ -119,7 +120,7 @@
                                 <a class="nav-link" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Salir</a>
+                                 <a class="nav-link" asp-controller="Cuenta" asp-action="Logout">Cerrar Sesión</a>
                             </li>
                         </ul>
                     </div>
@@ -129,7 +130,39 @@
 
                 </div>
             </nav>
+        
 
+        <h3>Registrar Destino</h3>
+
+    <form action="~/admin/registrardestinos" method="post">
+
+<div class="form-group">
+    <label>Foto:</label>
+    <input type="text" class="form-control" asp-for="Foto" >
+   
+</div>
+
+<div class="form-group">
+    <label>Titulo:</label>
+    <input type="text" class="form-control" asp-for="Titulo" >
+     @Html.ValidationMessageFor(m => m.Titulo, "", new { @class = "text-danger" })
+</div>
+
+<div class="form-group">
+    <label>Descripcion:</label>
+    <input type="text" class="form-control" asp-for="Descripcion" >
+    @Html.ValidationMessageFor(m => m.Descripcion, "", new { @class = "text-danger" })
+</div>
+
+<div class="form-group">
+    <label>Precio:</label>
+    <input type="text" class="form-control" asp-for="Precio" >
+    @Html.ValidationMessageFor(m => m.Precio, "", new { @class = "text-danger" })
+</div>
+
+<button class="btn btn-primary">Enviar</button>
+
+</form>
             
         </div>
     </div>

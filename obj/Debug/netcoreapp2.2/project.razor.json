@@ -2779,6 +2779,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Admin\\ActualizarDestino.cshtml",
+      "TargetPath": "Views\\Admin\\ActualizarDestino.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Admin\\DashAdmin.cshtml",
       "TargetPath": "Views\\Admin\\DashAdmin.cshtml",
       "FileKind": "mvc"
@@ -2834,11 +2839,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Cliente\\DashboardCliente.cshtml",
-      "TargetPath": "Views\\Cliente\\DashboardCliente.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -2851,6 +2851,11 @@
     {
       "FilePath": "Views\\Home\\Promociones.cshtml",
       "TargetPath": "Views\\Home\\Promociones.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Admin\\Dashboard.cshtml",
+      "TargetPath": "Views\\Admin\\Dashboard.cshtml",
       "FileKind": "mvc"
     }
   ]
